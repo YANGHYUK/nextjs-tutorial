@@ -13,11 +13,11 @@ export default function Index() {
       >
         <Link href={`/count`}>
           <span style={{ display: "inline-block", padding: "20px" }}>
-            <a>COUNT</a>
+            <a>COUNT(with Redux & Redux-saga)</a>
           </span>
         </Link>
         {/* prefetch */}
-        <Link href={`/ssr-test`}>
+        <Link prefetch href={`/ssr-test`}>
           <span style={{ display: "inline-block", padding: "20px" }}>
             <a>SSRTest</a>
           </span>

@@ -4,6 +4,7 @@ import "styles/globals.css"
 import wrapper from "store/configure"
 
 function MyApp({ Component, pageProps }) {
+  console.log({ Component, pageProps })
   return <Component {...pageProps} />
 }
 
