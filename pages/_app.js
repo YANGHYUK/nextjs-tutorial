@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import "styles/globals.css"
+// import { withRedux, createWrapper, MakeStore } from "next-redux-wrapper"
+// import withReduxSaga from "next-redux-saga"
+import wrapper from "store/configure"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default wrapper.withRedux(MyApp)
